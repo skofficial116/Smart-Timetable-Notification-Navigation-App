@@ -1,0 +1,15 @@
+import apiClient from "./apiClient";
+
+const timetableService = {
+    getTimetable: async () => {
+        const response = await apiClient.get("/timetable");
+        return response.data;
+    },
+
+    updateTimetable: async (timetableData) => {
+        const response = await apiClient.put("/timetable", timetableData);
+        return response.data;
+    },
+};
+
+export default timetableService;

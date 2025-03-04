@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import RoomCard from "./RoomCard";
 
 const RoomAvailability = () => {
     const [rooms, setRooms] = useState([]);
@@ -11,9 +12,11 @@ const RoomAvailability = () => {
     return (
         <div>
             <h2>Available Rooms</h2>
-            {rooms.map((room) => (
-                <p key={room.id}>{room.name} - {room.status}</p>
-            ))}
+            <div style={{ display: "flex", flexWrap: "wrap" }}>
+                {rooms.map((room) => (
+                    <RoomCard key={room.id} room={room} />
+                ))}
+            </div>
         </div>
     );
 };

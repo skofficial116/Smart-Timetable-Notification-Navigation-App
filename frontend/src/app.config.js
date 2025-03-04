@@ -9,7 +9,7 @@ export default {
     version: "1.0.0",
     extra: {
       API_BASE_URL,
-      JWT_SECRET_KEY: "your_jwt_secret_key_here",
+      JWT_SECRET_KEY: "c09a196d8f7c472d99deeb862d465e15",
       USER_STORAGE_KEY: "@CollegeApp_user",
       TOKEN_STORAGE_KEY: "@CollegeApp_token",
     },

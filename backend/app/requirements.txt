@@ -5,4 +5,3 @@ pydantic
 passlib[bcrypt]
 python-dotenv
 pyjwt
-sqlite
